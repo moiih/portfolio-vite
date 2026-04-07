@@ -1,0 +1,8 @@
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px; /* Adjust height as needed */
+  background-color: #007bff; /* Adjust color as needed */
+  transform-origin: 0% 0%; /* Ensures it grows from the left */
+}

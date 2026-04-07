@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* -------------- About-Me Title -------------- */
+.aboutMe-main-container {
+    min-height: 100dvh;
+    font-family: "outfit", sans-serif;
+    /* border: 2px solid orange; */
+}
+.aboutMe-main-container h1 {
+    text-align: center;
+    font-size: 45px;
+}
+/* -------------- About-Me Image -------------- */
+.aboutMe-image {
+    /* object-fit: cover; */
+    height: 550px;
+    width: 250px;
+    border-radius: 30px;
+    /* transition: all 0.5s ease; */
+}
+/* .aboutMe-image:hover {
+    filter: drop-shadow(0 0 30px cyan);
+    transform: scale(1.03);
+} */
+
+/* -------------- About-Me Description -------------- */
+.aboutMe-description-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* .aboutMe-description-container div { */
+.paragraphs-main-aboutMe {
+    width: 50%;
+    /* font-size: 60px; */
+    font-size: 17px;
+    line-height: 2rem;
+    /* transition: .7s; */
+}
+.para-2-aboutMe {
+    margin-top: 12px;
+}
+        /* -------------- Scrambled Word Animation Effect (👍) -------------- */
+/* .paragraphs-main-aboutMe:hover {
+    font-size: 17px;
+} */
+/* .paragraphs-main-aboutMe:hover .info-strip-aboutMe {
+    display: none;
+} */
+
+/* -------------- About-Me Info & Details -------------- */
+.info-strip-aboutMe {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    /* font-family: "montserrat alternates", sans-serif; */
+    font-family: "outfit", sans-serif;
+
+    display: flex;
+    gap: 50px;
+    /* gap: 3vw; */
+
+}
+/* ---------About-Me Info & Details --------- */
+
+        /* Added 'perspective' below(in parent container) for ["translateZ()"] (in child container) to work */
+.info-description-aboutMe {
+    /* perspective: 100px; */
+    cursor: default;
+}
+
+    /* -------------- LOGOS -------------- */
+.skills-description-aboutMe {
+    margin-top: 1.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    /* transition: 0.5s; */
+}
+.skills-logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    /*  */
+    padding: 9px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.skills-logo {  /* Very important section for LOGO's height and width control */
+    height: 50px;
+    width: auto;
+}
+/* -------------- (Skills, Education, Experience) STRIP-SECTION -------------- */
+.section-aboutMe {
+    cursor: pointer;
+    letter-spacing: 0.02rem;
+    transform: translateY(0%);
+    color: rgb(206, 206, 206);
+    /* color: white; */
+    /* transform: scale(1); */
+    transition: all 0.4s ease;
+}
+.section-aboutMe:hover {
+    /* transform: scale(1.05); */
+    transform: translateY(-5%);
+}
+
+    /* Effect: Center Underline using '::after' on Hover */
+/* .hover-underline {
+    position: relative;
+    display: inline-block; 
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+.hover-underline::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;         
+    width: 0;           
+    height: 2px;
+    background-color: yellow;
+    transition: all 0.3s ease-in-out; 
+    transform: translateX(-50%);    // Keeps it centered as it grows 
+}
+.hover-underline:hover::after {
+    width: 40%;        // Grows to 40% (cut by 30% on each side) 
+} */
+
+
+/* -------------- (Education, Experience) SECTIONS DESCRIPTION DATA -------------- */
+
+    /* Float-Down Animation Logic */
+.float-down-effect {
+    animation: floatDownAnimation 0.4s ease-in-out;
+}
+@keyframes floatDownAnimation {
+    from { 
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+    /* Active UnderLine Effect/Animation Logic */
+.magic-underline  {
+    transition: all 0.5s ease;
+    width: 0%;
+    border-bottom: 0px;
+    /* border-image: linear-gradient(to bottom, rgb(255, 242, 0), transparent) 1; */
+}
+.magic-underline.active-tab {  /*  It is important NOT TO GIVE SPACE between these two classes, so that browser could search the element(div) which has these two classes used together.  */
+    width: 45%;
+    border-bottom: 90px solid yellow;
+    /* border-image: linear-gradient(to right, rgb(255, 242, 0), transparent) 1; */
+}
+
+.gradient-year {
+    display: inline-block;
+    margin-top: 1.9rem;
+    font-size: 40px;
+    font-weight: 800;
+    /* background: linear-gradient(267deg, #DA7C25 0.36%, #B923A1 102.06%); */
+    background: linear-gradient(to right,rgb(37, 218, 128) 0.36%, rgb(35, 117, 185) 102.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* .gradient-year:hover {
+    filter: drop-shadow(0 0 15px cyan);
+} */
+.year-paragraph {
+    letter-spacing: 0.09rem;
+    /* word-spacing: 0.05rem; */
+}
+/* ------------------ Experience Description Section ------------------ */
+.experience-desc-table {
+    margin-top: 1rem;
+}
+.experience-desc-table td {
+    vertical-align: top;
+    padding-bottom: 6px;
+}
+.experience-desc-heads {
+    font-weight: 500;
+    letter-spacing: 0.03rem;
+    /* background: linear-gradient(to right,rgb(37, 218, 128) 0.36%, rgb(35, 117, 185) 102.06%); */
+    /* background: linear-gradient(267deg, #DA7C25 0.36%, #B923A1 102.06%); */
+    background: linear-gradient(270deg, #f38d09 30.36%, #fa34d9 102.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.experience-desc-data {
+    padding-left: 25px;
+    letter-spacing: 0.02rem;
+}
+.exp-tech-tool-list {
+    /* padding-left: 20px; */
+    /* font-weight: 800; */
+    list-style-type: none;
+}
+
+/* -------- Flex Wrapper to make Image and Decription Content Flexible in smaller screens -------- */
+.flex-wrapper-img-description {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    /* gap: 3.2vw; */
+}
+
+
+/* -------------- Media Queries For Smaller Screen Sizes -------------- */
+
+/* 
+@media (max-width: 700px) {
+    .flex-wrapper-img-description {
+        gap: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .paragraphs-main-aboutMe {
+        width: 80%;
+    }
+    .info-strip-aboutMe {
+        gap: 0px;
+    }
+} 
+*/

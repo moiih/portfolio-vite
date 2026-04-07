@@ -1,0 +1,15 @@
+.app-main-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.border-toggle * {
+    border: 2px solid magenta;
+    padding: 1.5px;
+}       
+
+.toggle-icon {
+    position: absolute;
+    color: aqua;
+}

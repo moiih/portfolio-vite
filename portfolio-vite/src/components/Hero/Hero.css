@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* -------------- Main Hero Container -------------- */
+/* .hero-main-container * { */
+    /* border: 2px solid green; */
+    /* color: black; */
+/* } */
+.hero-main-container {
+    /* margin: 0 auto; */
+    /* border: 2px solid green; */
+    /* min-height: calc(100dvh - 6rem); */
+    min-height: calc(100dvh - var(--navbar-height));
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    gap: 0px;
+
+    color: black;
+    font-family: "outfit", system-ui;
+    color: white;
+}
+/* -------------- Profile Image -------------- */
+.hero-profile-image {
+    /* border: 5px solid green; */
+    height: 260px;
+    width: 260px;
+    border-radius: 180px;
+    margin-top: 10px;
+}
+/* -------------- Profile Intro -------------- */
+.hero-intro-outer-wrapper .hero-intro-line-1 {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.4;
+    letter-spacing: .12rem;
+}
+.hero-intro-outer-wrapper .hero-intro-line-2 {
+    text-align: center;
+    margin: 0 auto;
+}
+.hero-intro-line-1 span {
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923A1 102.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero-intro-line-2 {
+    width: 50%;
+    text-align: center;
+    font-size: 17px;
+    /* line-height: 40px; */
+}
+/* -------------- Profile Action Buttons -------------- */
+.hero-buttons-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+}
+
+.hero-buttons-container .hero-contact-button {
+    cursor: pointer;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923A1 102.06%);
+    font-size: 18px;
+    padding: 5px 25px;
+    border-radius: 30px;
+}
+.hero-buttons-container .hero-resume-button {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px 35px;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+
+
+/* -------------- Media Query -------------- */
+/* @media (max-width: 655px) { */
+    
+/* } */

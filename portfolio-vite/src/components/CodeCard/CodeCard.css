@@ -1,0 +1,42 @@
+.code-card-outer-wrapper {
+    border: 4px solid black;
+    /* width: 50%; */
+    /* justify-items: center; */  /* If not used under Grid layout child(s)  */
+}
+
+/* ------------------- Code Template Container --------------------- */
+.code-template-container {
+    flex: 1 1 auto;
+    /* transform: translateX(-50%); */
+
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto 1fr;
+    border: 2px solid #9b25e4;
+    /* padding: 30px; */
+    width: 400px;
+    height: 220px;
+    border: 2px solid #9b25e4;
+}
+/* 
+.code-template-container > div {
+    padding: 20px;
+} */
+
+.code-top-title-bar {
+    grid-column: 1 / span 2;
+    padding: 5px;
+    background-color: #2552e4;
+    border: 1px solid #54e224;
+}
+.code-bottom-left-side-bar {
+    padding: 5px;
+    background-color: #25e45b;
+    border: 1px solid #e42525;
+}
+.code-bottom-right-code-bar {
+    /* padding: 5px; */
+    background-color: #e48825;
+    border: 1px solid #2552e4;
+}
+
