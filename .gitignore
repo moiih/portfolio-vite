@@ -2,8 +2,8 @@
 __pycache__/
 *.py[cod]
 *$py.class
-venv/
-.venv/
+env1/
+.env1/
 env/
 db.sqlite3
 db.sqlite3-journal
