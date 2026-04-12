@@ -1,4 +1,3 @@
-# from django.shortcuts import render
 from .serializers import StudentsSerializer
 from students.models import StudentsModel
 from rest_framework.response import Response
